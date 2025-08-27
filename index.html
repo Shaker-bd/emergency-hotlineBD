@@ -22,7 +22,140 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="hind-madurai-fonts">
+    <nav>
+      <div
+        class="nav-container bg-white flex flex-row justify-between items-center p-4"
+      >
+        <div class="nav-left flex items-center gap-2 md:gap-5">
+          <img class="w-12 h-12" src="./assets/logo.png" alt="BD Govt. Logo" />
+          <h2 class="text-[#006747] font-extrabold md:text-xl">
+            Emergency <br />
+            Service
+          </h2>
+        </div>
+        <div class="nav-right flex items-center gap-1 md:gap-5">
+          <p class="bg-[#41ff6b1a] px-3 rounded-2xl">
+            <span class="font-bold" id="nav-heart-count">0 </span
+            ><i class="fa-solid fa-heart text-red-600"></i>
+          </p>
+          <p class="bg-[#41ff6b1a] px-3 rounded-2xl">
+            <span>100 </span><i class="fa-solid fa-star text-[#fcd227]"></i>
+          </p>
+          <p class="bg-[#00a63e] px-3 rounded-2xl text-white font-bold">
+            <span id="text-copy-count">0  </span> Copy
+          </p>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner Section -->
+    <div
+      class="banner-container bg-gradient-to-r from-[#013223] to-[#013223] via-[#006747] text-center text-white py-6 px-2"
+    >
+      <img
+        class="w-12 h-12 m-auto"
+        src="./assets/logo-dark.png"
+        alt="Govt. Logo"
+      />
+      <h1 class="text-2xl md:text-4xl font-bold">
+        Emergency Service Directory
+      </h1>
+      <p>
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
+    </div>
+    <!-- Main Section -->
+    <main class="bg-[#f5fff6] pb-12">
+      <div
+        class="main-container w-11/12 mx-auto grid grid-cosl-1 lg:grid-cols-12 pt-12"
+      >
+        <div
+          class="card-container col-span-1 lg:col-span-9 mr-3 grid md:grid-cols-2 lg:grid-cols-3 md:gap-3"
+        >
+          <div class="card-item bg-white shadow-xl rounded-lg p-4 mb-3">
+            <div class="icon flex items-center justify-between pb-3">
+              <div class="bg-[#ffe3e2] p-2 rounded-xl">
+                <img
+                  class="w-6 h-6"
+                  src="./assets/emergency.png"
+                  alt="Emergency Horn"
+                />
+              </div>
+              <i id="national-heart" class="card-heart fa-regular fa-heart"></i>
+            </div>
+            <h1 class="text-xl font-bold">National Emergency Number</h1>
+            <p class="text-gray-400 pb-5">National Emergency</p>
+            <h1 id="national-number" class="font-extrabold text-xl">100</h1>
+            <p class="rounded-xl inline-block p-2 bg-[#f2f2f2] mb-5 text-gray-400">All</p>
+            <div class="flex gap-1">
+              <button id="national-copy-btn" class="btn w-[45%]">
+                <i class="fa-regular fa-paste"></i>Copy
+              </button>
+              <button  class="btn bg-[#00a63e] text-white w-[45%]">
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+          <div class="card-item bg-white shadow-xl rounded-lg p-4 mb-3">
+            <div class="icon flex items-center justify-between pb-3">
+              <div class="bg-[#dfefff] p-2 rounded-xl">
+                <img
+                  class="w-6 h-6"
+                  src="./assets/police.png"
+                  alt="Emergency Horn"
+                />
+              </div>
+              <i class="card-heart fa-regular fa-heart"></i>
+            </div>
+            <h1 class="text-xl font-bold">Police Helpline Number</h1>
+            <p class="text-gray-400 pb-5">Police</p>
+            <h1 id="police-number" class="font-extrabold text-xl">999</h1>
+            <p class="rounded-xl inline-block p-2 bg-[#f2f2f2] mb-5 text-gray-400">Police</p>
+            <div class="flex gap-1">
+              <button id="police-copy-btn" class="btn w-[45%]">
+                <i class="fa-regular fa-paste"></i>Copy
+              </button>
+              <button id="police-btn" class="btn bg-[#00a63e] text-white w-[45%]">
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+          <div class="card-item bg-white shadow-xl rounded-lg p-4 mb-3">
+            <div class="icon flex items-center justify-between pb-3">
+              <div class="bg-[#ffe3e2] p-2 rounded-xl">
+                <img
+                  class="w-6 h-6"
+                  src="./assets/fire-service.png"
+                  alt="Emergency Horn"
+                />
+              </div>
+              <i class="card-heart fa-regular fa-heart"></i>
+            </div>
+            <h1 class="text-xl font-bold">Fire Service Number</h1>
+            <p class="text-gray-400 pb-5">Fire Service</p>
+            <h1 id="fire-number" class="font-extrabold text-xl">996</h1>
+            <p class="rounded-xl inline-block p-2 bg-[#f2f2f2] mb-5 text-gray-400">Fire</p>
+            <div class="flex gap-1">
+              <button id="fire-copy-btn" class="btn w-[45%]">
+                <i class="fa-regular fa-paste"></i>Copy
+              </button>
+              <button id="fire-btn" class="btn bg-[#00a63e] text-white w-[45%]">
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <aside
+          class="call-history col-span-1 mt-4 rounded-lg p-3 md:mt-0 lg:col-span-3 bg-white"
+        >
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold"><i class="fa-regular fa-clock"></i> Call History</h3>
+           <button class="btn bg-[#00a63e] text-white rounded-2xl">Clear
+          </div>
+        </aside>
+      </div>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
