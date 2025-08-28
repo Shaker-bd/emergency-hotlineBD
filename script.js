@@ -19,6 +19,14 @@ function getHotlineNumber(id) {
 const copyCount = parseInt(
   document.getElementById("text-copy-count").innerText
 );
+// Copy Alert function
+const copiedAlertContainer = document.getElementById("copiedAlert");
+function copyAlert() {
+  copiedAlertContainer.style.display = "block";
+  setTimeout(() => {
+    copiedAlertContainer.style.display = "none";
+  }, 2000);
+}
 // Copy Count function
 function getCopyCount(id) {
   const copyCount = parseInt(document.getElementById(id).innerText);
@@ -31,6 +39,7 @@ document
   .addEventListener("click", function () {
     navigator.clipboard.writeText(getHotlineNumber("national-number"));
     getCopyCount("text-copy-count");
+    copyAlert();
   });
 // Police text copy
 document
@@ -38,11 +47,13 @@ document
   .addEventListener("click", function () {
     navigator.clipboard.writeText(getHotlineNumber("police-number"));
     getCopyCount("text-copy-count");
+    copyAlert();
   });
 //   Fire text copy
 document.getElementById("fire-copy-btn").addEventListener("click", function () {
   navigator.clipboard.writeText(getHotlineNumber("fire-number"));
   getCopyCount("text-copy-count");
+  copyAlert();
 });
 //   Ambulance text copy
 document
@@ -50,6 +61,7 @@ document
   .addEventListener("click", function () {
     navigator.clipboard.writeText(getHotlineNumber("ambulance-number"));
     getCopyCount("text-copy-count");
+    copyAlert();
   });
 //   Electricity text copy
 document
@@ -57,11 +69,13 @@ document
   .addEventListener("click", function () {
     navigator.clipboard.writeText(getHotlineNumber("electricity-number"));
     getCopyCount("text-copy-count");
+    copyAlert();
   });
 //   Rail text copy
 document.getElementById("rail-copy-btn").addEventListener("click", function () {
   navigator.clipboard.writeText(getHotlineNumber("railway-number"));
   getCopyCount("text-copy-count");
+  copyAlert();
 });
 // Call button function
 

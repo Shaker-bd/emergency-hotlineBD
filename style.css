@@ -3,3 +3,20 @@
 .hind-madurai-fonts {
   font-family: "Hind Madurai", sans-serif;
 }
+
+@keyframes blink-animation {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink-animation 2s infinite;
+}
+.blink:hover {
+  animation-play-state: paused;
+}
